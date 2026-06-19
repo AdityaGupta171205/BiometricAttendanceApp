@@ -1,0 +1,138 @@
+[versions]
+# Build
+agp                         = "8.9.0"
+kotlin                      = "2.0.21"
+ksp                         = "2.0.21-1.0.28"
+
+# AndroidX
+coreKtx                     = "1.13.1"
+lifecycle                   = "2.8.1"
+activityCompose             = "1.9.0"
+navigationCompose           = "2.7.7"
+splashscreen                = "1.0.1"
+
+# Compose
+composeBom                  = "2024.12.01"
+
+# Hilt
+hilt                        = "2.51.1"
+hiltExt                     = "1.2.0"
+
+# Room
+room                        = "2.6.1"
+
+# DataStore
+datastore                   = "1.1.1"
+
+# Networking
+retrofit                    = "2.11.0"
+okhttp                      = "4.12.0"
+moshi                       = "1.15.1"
+
+# Firebase
+firebaseBom                 = "33.1.0"
+
+# Location & Maps
+playServicesLocation        = "21.3.0"
+playServicesMaps            = "18.2.0"
+mapsCompose                 = "4.4.1"
+
+# WorkManager
+workManager                 = "2.9.0"
+
+# Coroutines
+coroutines                  = "1.8.1"
+
+# Biometric
+biometric                   = "1.1.0"
+
+# Testing
+junit                       = "4.13.2"
+junitExt                    = "1.1.5"
+espresso                    = "3.5.1"
+
+
+[libraries]
+# ── Core ────────────────────────────────────────────────────
+androidx-core-ktx               = { group = "androidx.core",              name = "core-ktx",                         version.ref = "coreKtx" }
+androidx-lifecycle-runtime      = { group = "androidx.lifecycle",         name = "lifecycle-runtime-ktx",             version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel    = { group = "androidx.lifecycle",         name = "lifecycle-viewmodel-compose",       version.ref = "lifecycle" }
+androidx-activity-compose       = { group = "androidx.activity",          name = "activity-compose",                  version.ref = "activityCompose" }
+androidx-splashscreen           = { group = "androidx.core",              name = "core-splashscreen",                 version.ref = "splashscreen" }
+
+# ── Compose ─────────────────────────────────────────────────
+compose-bom                     = { group = "androidx.compose",           name = "compose-bom",                      version.ref = "composeBom" }
+compose-ui                      = { group = "androidx.compose.ui",        name = "ui" }
+compose-ui-tooling              = { group = "androidx.compose.ui",        name = "ui-tooling" }
+compose-ui-tooling-preview      = { group = "androidx.compose.ui",        name = "ui-tooling-preview" }
+compose-material3               = { group = "androidx.compose.material3", name = "material3" }
+compose-icons-extended          = { group = "androidx.compose.material",  name = "material-icons-extended" }
+
+# ── Navigation ──────────────────────────────────────────────
+navigation-compose              = { group = "androidx.navigation",        name = "navigation-compose",               version.ref = "navigationCompose" }
+
+# ── Hilt ────────────────────────────────────────────────────
+hilt-android                    = { group = "com.google.dagger",          name = "hilt-android",                     version.ref = "hilt" }
+hilt-compiler                   = { group = "com.google.dagger",          name = "hilt-android-compiler",            version.ref = "hilt" }
+hilt-navigation-compose         = { group = "androidx.hilt",              name = "hilt-navigation-compose",          version.ref = "hiltExt" }
+hilt-work                       = { group = "androidx.hilt",              name = "hilt-work",                        version.ref = "hiltExt" }
+hilt-work-compiler              = { group = "androidx.hilt",              name = "hilt-compiler",                    version.ref = "hiltExt" }
+
+# ── Room ────────────────────────────────────────────────────
+room-runtime                    = { group = "androidx.room",              name = "room-runtime",                     version.ref = "room" }
+room-ktx                        = { group = "androidx.room",              name = "room-ktx",                         version.ref = "room" }
+room-compiler                   = { group = "androidx.room",              name = "room-compiler",                    version.ref = "room" }
+
+# ── DataStore ───────────────────────────────────────────────
+datastore-preferences           = { group = "androidx.datastore",         name = "datastore-preferences",            version.ref = "datastore" }
+
+# ── Networking ──────────────────────────────────────────────
+retrofit-core                   = { group = "com.squareup.retrofit2",     name = "retrofit",                         version.ref = "retrofit" }
+retrofit-moshi                  = { group = "com.squareup.retrofit2",     name = "converter-moshi",                  version.ref = "retrofit" }
+okhttp-core                     = { group = "com.squareup.okhttp3",       name = "okhttp",                           version.ref = "okhttp" }
+okhttp-logging                  = { group = "com.squareup.okhttp3",       name = "logging-interceptor",              version.ref = "okhttp" }
+moshi-kotlin                    = { group = "com.squareup.moshi",         name = "moshi-kotlin",                     version.ref = "moshi" }
+moshi-codegen                   = { group = "com.squareup.moshi",         name = "moshi-kotlin-codegen",             version.ref = "moshi" }
+
+# ── Firebase ────────────────────────────────────────────────
+firebase-bom                    = { group = "com.google.firebase",        name = "firebase-bom",                     version.ref = "firebaseBom" }
+firebase-messaging              = { group = "com.google.firebase",        name = "firebase-messaging-ktx" }
+
+# ── Location & Maps ─────────────────────────────────────────
+play-services-location          = { group = "com.google.android.gms",    name = "play-services-location",           version.ref = "playServicesLocation" }
+play-services-maps              = { group = "com.google.android.gms",    name = "play-services-maps",               version.ref = "playServicesMaps" }
+maps-compose                    = { group = "com.google.maps.android",    name = "maps-compose",                     version.ref = "mapsCompose" }
+
+# ── WorkManager ─────────────────────────────────────────────
+work-runtime                    = { group = "androidx.work",              name = "work-runtime-ktx",                 version.ref = "workManager" }
+
+# ── Coroutines ──────────────────────────────────────────────
+coroutines-android              = { group = "org.jetbrains.kotlinx",      name = "kotlinx-coroutines-android",       version.ref = "coroutines" }
+coroutines-play-services        = { group = "org.jetbrains.kotlinx",      name = "kotlinx-coroutines-play-services", version.ref = "coroutines" }
+
+# ── Biometric ───────────────────────────────────────────────
+biometric                       = { group = "androidx.biometric",         name = "biometric",                        version.ref = "biometric" }
+
+# ── Testing ─────────────────────────────────────────────────
+junit                           = { group = "junit",                      name = "junit",                            version.ref = "junit" }
+junit-ext                       = { group = "androidx.test.ext",          name = "junit",                            version.ref = "junitExt" }
+espresso                        = { group = "androidx.test.espresso",     name = "espresso-core",                    version.ref = "espresso" }
+compose-ui-test                 = { group = "androidx.compose.ui",        name = "ui-test-junit4" }
+
+
+[plugins]
+android-application     = { id = "com.android.application",          version.ref = "agp" }
+kotlin-android          = { id = "org.jetbrains.kotlin.android",     version.ref = "kotlin" }
+kotlin-compose          = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-kapt             = { id = "org.jetbrains.kotlin.kapt",        version.ref = "kotlin" }
+ksp                     = { id = "com.google.devtools.ksp",          version.ref = "ksp" }
+hilt                    = { id = "com.google.dagger.hilt.android",   version.ref = "hilt" }
+google-services         = { id = "com.google.gms.google-services",   version = "4.4.2" }
+
+
+[bundles]
+compose     = ["compose-ui", "compose-ui-tooling-preview", "compose-material3", "compose-icons-extended"]
+room        = ["room-runtime", "room-ktx"]
+retrofit    = ["retrofit-core", "retrofit-moshi", "okhttp-core", "okhttp-logging", "moshi-kotlin"]
+maps        = ["maps-compose", "play-services-maps"]
+coroutines  = ["coroutines-android", "coroutines-play-services"]
